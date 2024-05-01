@@ -1,0 +1,135 @@
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 0.7;
+  margin-bottom: 4px;
+}
+
+/* ! categories start */
+
+.categories {
+  margin: 40px 0;
+}
+
+.categories .category-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+
+}
+
+/* ! categories end */
+
+/* ! products start */
+
+.products {
+  margin-bottom: 40px;
+
+}
+
+/* .products .product-list {
+  display: flex; 
+  gap: 20px;
+  flex-wrap: wrap;
+ 
+} */
+
+/* ! products end */
+
+/* !campaigns start */
+
+.campaigns .campaigns-wrapper {
+  display: flex;
+  gap: 20px;
+  /*hem yatayda hem dikeyde araları açıyor */
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+/* !campaigns end */
+
+/* ! blogs start */
+
+.blogs {
+  margin-bottom: 40px;
+}
+
+.blogs .blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+}
+
+
+/*  responsive  */
+
+@media (max-width:768px) {
+
+  .blogs .blog-list {
+
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+  }
+
+
+}
+
+/* ! blogs end */
+
+/* ! brands start */
+
+.brands {
+  margin: 40px 0;
+}
+
+.brand-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid#dee0ea;
+  padding: 30px 0;
+}
+
+.brand-list .brand-item {
+  opacity: 0.4;
+  transition: .2s ease-out transform;
+}
+
+.brand-list .brand-item:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* responsive  */
+
+@media (max-width:768px) {
+
+  .brand-list {
+
+    gap: 20px;
+  }
+
+}
+
+/* ! brands end */
+
+
+/* ! policy start */
+
+.policy {
+  margin: 40px 0;
+  border-top: 1px solid#dee0ea;
+
+}
+
+
+/* ? policy end */

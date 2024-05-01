@@ -1,0 +1,28 @@
+// ! localStorage.setItem  kaydı (depolama) start
+//  soltarafa isim sağ tarafa kayıdın detayları yazılıyor
+// java script olarak kaydediyor
+//  localStorage.setItem("fullName","Şenol Katip"); 
+
+// Json formatında kayıt ediyoruz
+// localStorage.setItem("fullName",JSON.stringify("Şenol Katip")); 
+//  array olarak kaydediyoruz
+
+const furits = ["elma", "armut", "muz", "kiraz"];
+const fullname = "Şenol Katip";
+localStorage.setItem("meyveler", JSON.stringify(furits));
+localStorage.setItem("fullName", JSON.stringify(fullname));
+
+
+// ! localstorage kaydı (depolama) end
+
+// ! localStorage.getItem  kaydı getirme (yapılan kaydı seçme) start
+// console.log(JSON.parse(localStorage.getItem("fullName")));
+const getData = JSON.parse(localStorage.getItem("fullName"));
+const getData1 = JSON.parse(localStorage.getItem("meyveler"));
+
+console.log(getData);
+console.log(getData1);
+
+
+
+// ! localStorage.getItem  kaydı getirme (yapılan kaydı seçme) end

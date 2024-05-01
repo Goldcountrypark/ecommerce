@@ -1,0 +1,195 @@
+.slider {
+    position: relative;
+}
+
+.slider-item {
+    position: relative;
+    height: calc(100vh - 136px);
+    display: flex;
+    align-items: center;
+}
+
+.slider-item .slider-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60%;
+    z-index: -1;
+}
+
+.slider-item .slider-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.slider-item .slider-heading {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.slider-item a{ 
+    position: relative;
+    z-index:1;
+}
+
+
+.slider .slider-buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+
+}
+
+.slider .slider-buttons button {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid#dee0ea;
+    background-color: #fff;
+    opacity: 0.6;
+    transition: .2s ease all;
+    
+}
+
+.slider .slider-buttons i {
+
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.slider .slider-buttons button:hover {
+
+    background-color: #1367ef;
+    color: #fff;
+    opacity: 1;
+}
+
+.slider .slider-dots {
+    position: absolute;
+    bottom: 20px;
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+
+}
+
+.slider .slider-dots .slider-dot {
+    border: none;
+    display: flex;
+    opacity: 0.4;
+    transition: .2s ease opacity;
+}
+
+.slider .slider-dots .slider-dot:hover {
+    border: none;
+    opacity: 1;
+
+}
+
+.slider .slider-dots .slider-dot span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+
+    border-radius: 100%;
+    background-color: #1367ef;
+
+}
+
+
+.slider .slider-dots .slider-dot.active {
+    opacity: 1;
+}
+
+/* ? slidere geçiş effecti yazıyoruz start */
+
+
+   .fade{ 
+
+      animation-name: fade;
+      animation-duration: 1.5s;
+
+   }
+
+   /* buraya class(.fade) değil içeriindekini veriyoruz */
+@keyframes fade{ 
+
+    from{ 
+        opacity:0.4;
+    }
+
+    to{ 
+        opacity:1;
+    }
+}
+
+
+
+   /* ? slidere geçiş effecti yazıyoruz end */
+
+/* ! responsive */
+
+@media (max-width: 768px) {
+    .slider-item {
+      height: calc(100vh - 155px);
+    }
+  
+    .slider-buttons {
+      display: none !important;
+    }
+  }
+
+/* @media screen and (max-width:768px) {
+    .slider-item .slider-image img {
+
+        height: 100%;
+        
+        object-fit: cover;
+        object-position: 100%;
+
+    }
+
+
+    .slider-item {
+
+        height: calc(100vh - 154px);
+        display: flex;
+        align-items: center;
+      
+
+    }
+
+
+
+
+
+} */
+
+
+/* @media screen and (max-width:576px) {
+
+    .slider-buttons {
+
+        display: none !important;
+    }
+
+    .slider-item   .slider-image{
+        width:100%;
+    }
+
+
+
+} */
